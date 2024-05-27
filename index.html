@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#movies">Películas</a></li>
+                <li><a href="#favorite">Favoritos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body background="https://images2.alphacoders.com/801/80110.jpg">
+        <div style="width: 60%; display: flex; justify-content: flex-end; padding: 8px;">
+            <form action="/buscar" method="get" style="display: flex; align-items: center;">
+                <input type="text" name="query" placeholder="Busca tu peli..." style="padding: 8px; font-size: 16px; border: 1px solid #ff8a15; border-radius: 4px 0 0 4px; outline: none;">
+                <button type="submit" style="padding: 8px 16px; font-size: 16px; border: 1px solid #ff8a15; border-left: none; border-radius: 0 4px 4px 0; background-color: #021b1f; color: white; cursor: pointer;">Buscar</button>
+            </form>
+        </div>
+    </body>
+
+    <section id="movies">
+        <!-- <h2>¡Bienvenido a ESTUDIO 5!
+
+            Estamos encantados de tenerte aquí. En nuestra tienda encontrarás una amplia selección de películas de todos los géneros y para todos los gustos.
+            Desde los clásicos atemporales hasta los últimos estrenos, tenemos algo especial para cada amante del cine.
+            Nuestro objetivo es brindarte una experiencia única y ayudarte a encontrar esa película perfecta que hará de tu día algo especial.
+        </h2> -->
+        <div class="welcome-message">
+            <h1>¡Bienvenido a ESTUDIO 5!</h1>
+            <p>Estamos encantados de tenerte aquí. En nuestra tienda encontrarás una amplia selección de películas de todos los géneros y para todos los gustos. Desde los clásicos atemporales hasta los últimos estrenos, tenemos algo especial para cada amante del cine.</p>
+            <p><strong>¡Gracias por elegir ESTUDIO 5 como tu destino cinematográfico!</strong></p>
+            <p>¡Disfruta tu visita!</p>
+        </div>
+
+
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <div class="movie">
+                    <img src="https://marketplace.canva.com/EAEa1PXDLCI/1/0/1131w/canva-negro-y-blanco-pel%C3%ADcula-terror-p%C3%B3ster-OkU3Elwi1d0.jpg" alt="Película 1">
+                    <h3>Quiero salir</h3>
+                    <p>$3800.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://marketplace.canva.com/EAEma6de8wo/1/0/1131w/canva-p%C3%B3ster-pel%C3%ADcula-gris-rojo-negro-pincelada-XFWC5RXZjqM.jpg" alt="Película 2">
+                    <h3>La vuelta</h3>
+                    <p>$3500.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://static.filmin.es/images/es/media/37918/3/poster_0_3_1000x1500.png" alt="Película 3">
+                    <h3>Noche del miedo</h3>
+                    <p>$8200.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/poster-peliculas-terror-2019-prodigy-1578395572.jpg" alt="Película 4">
+                    <h3>Maligno</h3>
+                    <p>$1700.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/030/029/901/large/delphine-baccaro-ok22.jpg?1599397112.jpg" alt="Película 4">
+                    <h3>Tenet</h3>
+                    <p>$7600.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://i.etsystatic.com/23402008/r/il/86eb07/2374193445/il_570xN.2374193445_1y0k.jpg" alt="Película 4">
+                    <h3>Star War</h3>
+                    <p>1000.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://tumbaabierta.com/wp-content/uploads/2011/05/tumbaabierta_Tintin_Poster_Internacional.jpg" alt="Película 4">
+                    <h3>Tintin</h3>
+                    <p>$2600.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="movie">
+                    <img src="https://www.analiasanchezprensa.com.ar/wp-content/uploads/2024/01/DOBLES-DE-ACCION-POSTER-LATAM-WEB.jpg" alt="Película 4">
+                    <h3>Doble de accion</h3>
+                    <p>$4400.00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ESTUDIO 5 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
